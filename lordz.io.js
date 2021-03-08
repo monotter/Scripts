@@ -1,4 +1,3 @@
-
 var usrAgent = navigator.userAgent.replace(/Intel Mac OS X ([0-9]+)_([0-9])_([0-9])/,function(full, main, mid, last, len, all){
     if(main<11) return full;
     return `Intel Mac OS X ${10}_${15+parseInt(mid)}_${7+parseInt(last)}`
